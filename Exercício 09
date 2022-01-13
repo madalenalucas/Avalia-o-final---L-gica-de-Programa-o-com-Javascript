@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        <button onclick="entradas()">Calcular</button>
+        <div id="saida"></div>
+    </body>
+    
+    <script>
+        var saida = document.querySelector('#saida'); 
+        entradas();
+        function entradas()
+        {
+            var n1 = parseFloat(prompt("Por favor, digite a largura"));
+            var n2 = parseFloat(prompt("Por favor, digite a altura"));
+            try {
+                enumero(n1);
+                enumero(n2);
+            }catch(e){
+                alert(e);
+                n1=0;
+                n2=0;
+            }
+            area(n1,n2);
+        }
+        function enumero(n)
+        {
+            if (n === undefined)
+            {
+                throw new Error('O parâmetro está indefinido!');
+            }
+            if (isNaN(n))
+            {
+                throw new Error('Digite apenas números!');
+            }
+        }
+                       
+        function area(l,a){
+            var area = l * a; 
+            exibenumero(area);            
+        }   
+        function exibenumero(msg){
+            saida.innerHTML = msg;
+        }                                      
+   
+    </script>
+</html>
