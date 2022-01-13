@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Loteria</h1>        
+        <div id="saida"></div>
+    </body>
+    
+    <script>   
+        function sorteio(){
+            return Math.floor(Math.random()*60);
+        }     
+        var sorteados = numerossortidos();
+        function numerossortidos(){
+            var sorteados = [];
+            while(sorteados.length <6)
+            {   
+                var n = sorteio();
+                if (sorteados.indexOf(n)== -1)
+                {
+                    sorteados[sorteados.length] = n;                
+                }
+            }
+            return sorteados;
+        }        
+        var msg = '<p>Os números sorteados são: </p><p>'+sorteados.join(', ')+'</p>';
+        var saida = document.querySelector("#saida");
+        saida.innerHTML = msg;                    
+    </script>
+</html>
