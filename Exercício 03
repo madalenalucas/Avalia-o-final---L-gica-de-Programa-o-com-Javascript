@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+    </body>
+    
+    <script>
+            
+        //fazer jogador1 digitar um numero
+        var n1 = parseInt(prompt("Jogador 1, digite um número!"));                        
+                                                
+        //fazer jogador2 digitar outro numero
+        var n2 = parseInt(prompt("Jogador 2, digite outro número!"));                        
+                
+        //se forem iguais, mostrar mensagem 'empate'
+        if (n1==n2)
+        {
+            alert("Empate!");
+        }        
+        else
+        {
+            //sortear um numero entre 0 e 1
+            var sorteio = parseInt(Math.random()*2);
+
+            // se o numero sorteado for 0, ganha quem escolher o numero MENOR
+            //se o numero sorteado for 1, ganha quem escolher o numero MAIOR
+            sorteio == 0 ?(
+                alert(n1<n2?"O jogador 1 venceu!":"O jogador 2 venceu!")
+            ):(
+                alert(n1>n2?"O jogador 1 venceu!":"O jogador 2 venceu!")
+            )
+        }          
+            
+        
+            
+
+            
+        
+        
+        
+        
+    </script>
+</html>
