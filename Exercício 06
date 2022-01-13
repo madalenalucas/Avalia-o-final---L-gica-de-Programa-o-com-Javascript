@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+    </body>
+    
+    <script>                                                
+        for (var i = 1004; i<=2017;i++)
+        {            
+            if (i%4 == 0 && (i%400 == 0 || i%100!=0))
+            {                
+                document.write(i+'<br>');
+            }
+        }    
+    </script>
+</html>
