@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        
+        <script>
+            
+            //pedir para o usuario digitar um numero e converter em numero inteiro
+            var n1 = parseInt(prompt("Por favor, digite um número!"));                        
+                                                
+            //pedir para o usuario digitar outro numero e converter em numero inteiro                        
+            var n2 = parseInt(prompt("Por favor, digite outro número!"));
+                        
+            /*
+            mostrar num alert o seguinte texto
+            o resto da divisão de (n1) por (n2) é: (resultado); 
+            */
+            alert("O resultado da divisão de " + n1+ " por " + n2.toString() +" é: "+ (n1/n2));         
+            
+            /*
+            mostrar num alert o seguinte texto
+            o numero (n1) elevado a (n2) é: (resultado); 
+            */
+            alert("O número " + n1+ " elevado a " + n2 +" é: "+ Math.pow(n1,n2));     
+            
+            
+        </script>
+    </body>
+</html>
