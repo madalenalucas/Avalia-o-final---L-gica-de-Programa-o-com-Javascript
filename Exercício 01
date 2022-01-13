@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        
+        <script>
+            
+            //pedir para o usuario digitar um numero e converter em numero inteiro
+            var n1 = parseInt(prompt("Por favor, digite um número!"));                        
+                                                
+            //pedir para o usuario digitar outro numero e converter em numero inteiro                        
+            var n2 = parseInt(prompt("Por favor, digite outro número!"));
+
+            //mostrar a subtração concatenando com o texto "a subtração é: ..."
+            alert("A subtração é: "+ (n1-n2).toString());
+
+            //mostrar a multiplicação concatenando com o texto "a multiplicação é: ..."
+            alert("A multiplicação é: "+ (n1*n2).toString());
+            
+            //mostrar a divisão concatenando com o texto "a divisão é: ..."
+            alert("A divisão é: "+ (n1/n2).toString());
+
+            //mostrar a soma concatenando com o texto "a soma é: ..."
+            alert("A soma é: "+ (n1+n2).toString());
+            
+        </script>
+    </body>
+</html>
